@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 14% 96%;
+  --foreground: 220 33% 12%;
+  --muted: 220 14% 90%;
+  --muted-foreground: 220 18% 30%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 33% 12%;
+  --accent: 251 91% 66%;
+  --accent-foreground: 0 0% 100%;
+}
+
+.dark {
+  --background: 224 35% 10%;
+  --foreground: 210 40% 98%;
+  --muted: 220 14% 18%;
+  --muted-foreground: 220 15% 65%;
+  --card: 220 18% 14%;
+  --card-foreground: 210 40% 98%;
+  --accent: 142 69% 58%;
+  --accent-foreground: 0 0% 0%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "liga", "tnum";
+}
